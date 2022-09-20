@@ -137,6 +137,8 @@ button {
     display: flex;
     column-gap: .75rem;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .section--titulo-borda {
@@ -427,6 +429,139 @@ button {
     box-shadow: hsla(79, 72%, 55%) -5px -5px, hsla(79, 72%, 55%, 0.705) -10px -10px, hsla(79, 72%, 55%, 0.534) -15px -15px, hsla(79, 72%, 55%, 0.267) -20px -20px, hsla(79, 72%, 55%, 0.096) -25px -25px;
     transition: all .5s;
 }
+
+/* ESCOLHA SECÃO */
+.escolha {
+    padding-bottom: 0;
+}
+
+.escolha--overflow {
+    position: relative;
+}
+
+.escolha--container {
+    row-gap: 3rem;
+}
+
+.escolha--conteudo .section--data {
+    margin-bottom: 2rem;
+}
+
+.escolha--descricao {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.escolha--dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+}
+
+.escolha--grupo {
+    text-align: center;
+}
+
+.escolha--numero {
+    font-size: var(--h1-font-size);
+    font-family: var(--second-font);
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+
+.escolha--subtitulo {
+    font-size: var(--small-font-size);
+}
+
+.escolha--triangulo {
+    height: 325px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.escolha--triangulo-1 {
+    width: 305px;
+    background-color: var(--primeira-cor);
+}
+
+.escolha--img {
+    width: 260px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+/* PREÇOS SEÇÃO */
+.preco--container {
+    grid-template-columns: 285px;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.preco--card,
+.preco--shape,
+.preco--lista {
+    display: grid;
+}
+
+.preco--card {
+    row-gap: 2rem;
+    background-color: hsla(79, 6%, 64%, .07);
+    padding: 2rem 2.5rem;
+}
+
+.preco--img {
+    width: 35px;
+}
+
+.preco--shape {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primeira-cor);
+    border-radius: 50%;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.preco--titulo {
+    font-size: var(--h3-font-size);
+    color: var(--texto-cor);
+    margin-bottom: 1rem;
+}
+
+.preco--numero {
+    font-size: var(--h1-font-size);
+}
+
+.preco--lista {
+    row-gap: 1rem;
+}
+
+.preco--item {
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.preco--item i{
+    font-size: 1.25rem;
+    color: var(--primeira-cor);
+}
+
+.preco--item-opacity {
+    opacity: .3;
+}
+
+.preco--card-ativo {
+    box-shadow: hsla(79, 72%, 55%) -5px -5px, hsla(79, 72%, 55%, 0.705) -10px -10px, hsla(79, 72%, 55%, 0.534) -15px -15px, hsla(79, 72%, 55%, 0.267) -20px -20px, hsla(79, 72%, 55%, 0.096) -25px -25px;
+    transition: all .5s; 
+}
+
+
 
 
 
