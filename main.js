@@ -36,3 +36,43 @@ const scrollHeader = () =>{
                        : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+/*----------EMAIL JS-----------------*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message'),
+      contactUser = document.getElementById('contact-user')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //checa se o campo tem valor
+    if(contactUser.value === ''){
+        //adiciona e remove cor
+        contactMessage.classList.remove('color-green')
+        contactMessage.classList.add('color-red')
+
+        //exibir mensagem
+        contactMessage.textContent = 'Você deve colocar um email 👆'
+
+        //tempo mensagem
+        setTimeout(() =>{
+            contactMessage.textContent = ''
+        }, 3000)
+    } else{
+        // service ID - template ID - #form - publickey
+        emailjs.sendForm('','','#contact-form','')
+            .then(() =>{
+                //exibir mensagem e adiciona cor
+                contactMessage.classList.add('color-green')
+                contactMessage.textContent = 'Seu registro está feito! 💪'
+
+                //tempo mensagem
+                setTimeout(() =>{
+                    contactMessage.textContent = ''
+                }, 3000)
+            })
+    }
+}
+
+contactForm.addEventListener('submit', sendEmail)
