@@ -76,3 +76,18 @@ const sendEmail = (e) =>{
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+
+/*---------------SCROLL REVEAL-----------------*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 1500,
+    delay: 300
+})
+
+sr.reveal(`.home--data, .footer--container, .footer--group`)
+sr.reveal(`.home--img`, {delay: 500, origin: 'bottom'})
+sr.reveal(`.logos--img, .programa--card, .preco--card`, {interval: 50})
+sr.reveal(`.escolha--img`, {origin: 'left'})
+sr.reveal(`.escolha--conteudo`, {origin: 'right'})

@@ -795,7 +795,7 @@ button {
     }
 
     .section{
-        padding: 7rem 0 7rem 0;
+        padding: 7rem 0 0;
     }
 
     .home--container{
@@ -881,6 +881,10 @@ button {
 
     .preco--container{
         gap: 4rem;
+    }
+
+    .precos{
+        margin-bottom: 5rem;
     }
 
     .footer{
