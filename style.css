@@ -271,7 +271,7 @@ button {
 }
 
 .home--subtitulo {
-    font-size: var(--bigger-font-size);
+    font-size: var(--big-font-size);
     -webkit-text-stroke: 1px var(--titulo-cor);
     color: transparent !important;
 }
@@ -340,6 +340,24 @@ button {
     color: var(--primeira-cor);
 }
 
+.botao--2 {
+    display: inline-block;
+    background-color: var(--primeira-cor);
+    padding: 10px 12px;
+    border: 2px solid var(--primeira-cor);
+    color: var(--titulo-cor-black);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+    transition: background .3s;
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.botao--2:hover {
+    background-color: transparent;
+    color: var(--primeira-cor);
+}
+
 .botao i {
     font-size: 1.25rem;
     transition: transform .3s;
@@ -351,6 +369,7 @@ button {
     justify-content: center;
     column-gap: .5rem;
 }
+
 
 .botao--flex:hover i {
     transform: translateX(.25rem);
@@ -380,6 +399,9 @@ button {
     padding: 1.5rem 2rem;
     border: 2px solid transparent;
     transition: background .5s, border .4s;
+    box-shadow: hsla(79, 72%, 55%) -5px -5px, hsla(79, 72%, 55%, 0.705) -10px -10px, hsla(79, 72%, 55%, 0.534) -15px -15px, hsla(79, 72%, 55%, 0.267) -20px -20px;
+    transition: all .5s;
+    border: 1px solid var(--primeira-cor);
 }
 
 .programa--img {
@@ -415,19 +437,8 @@ button {
     color: var(--primeira-cor-alt);
 }
 
-.programa--botao i {
-    display: block;
-    transition: transform .3s;
-}
-
-.programa--botao:hover i {
-    transform: translateX(.25rem);
-}
-
 .programa--card:hover {
-    box-shadow: hsla(79, 72%, 55%) -5px -5px, hsla(79, 72%, 55%, 0.705) -10px -10px, hsla(79, 72%, 55%, 0.534) -15px -15px, hsla(79, 72%, 55%, 0.267) -20px -20px, hsla(79, 72%, 55%, 0.096) -25px -25px;
-    transition: all .5s;
-    border: 1px solid var(--primeira-cor);
+   
 }
 
 /* ESCOLHA SECÃO */
@@ -799,12 +810,7 @@ button {
     }
 
     .home--container{
-        grid-template-columns: repeat(2, max-content);
         align-items: initial;
-    }
-
-    .home--titulo{
-        margin: .75rem 0 1.25rem;
     }
 
     .home--description{
@@ -814,7 +820,6 @@ button {
 
     .home--img{
         width: 550px;
-        transform: translateX(-6rem);
     }
 
     .home--triangulo{
@@ -921,14 +926,14 @@ button {
         padding-top: 3rem;
     }
 
-    .home--images{
+   /* .home--images{
         transform: translateX(-9rem);
-    }
+    } */
 
-    .home--img{
+   /* .home--img{
         width: 700px;
         transform: translateX(2rem);
-    }
+    } */
 
     .home--triangulo{
         height: 805px;

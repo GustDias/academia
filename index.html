@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/favicon.webp" type="image/x-icon">
     <!-- REMIXICON -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" defer>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <!-- JAVASCRIPT -->
     <script src="main.js" defer></script>
     <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" async>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap"
         rel="stylesheet">
-
-    <title>Website Academia Responsiva</title>
+    <title>Kuzume Suplementos</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav--logo">
-                <img src="imgs/logo-nav.png" alt="logo"> GYM
+                <img src="imgs/logo-nav.webp" width="128" height="128" alt="logo">KUZUME
             </a>
 
             <div class="nav--menu" id="nav-menu">
@@ -71,18 +71,16 @@
         <section class="home section" id="home">
             <div class="home--container container grid">
                 <div class="home--data">
-                    <h2 class="home--subtitulo">FAÇA VOCÊ</h2>
-                    <h1 class="home--titulo">SEU SHAPE</h1>
-                    <p class="home--description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut incidunt
-                        hic facilis? Dolore ex, iste excepturi non nostrum assumenda rem adipisci tempora quibusdam
-                        voluptatibus id ratione veniam minus laborum ab.</p>
+                    <h1 class="home--subtitulo">Suplementos</h1>
+                    <h2 class="home--titulo">KUZUME</h2>
+                    <p class="home--description">Buscando uma loja de suplementos? Aqui na Kuzume você encontra os melhores e mais derivados produtos! </p>
                     <a href="#" class="botao botao--flex">
-                        Comece Agora <i class="ri-arrow-right-line"></i>
+                        VER PRODUTOS <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
 
                 <div class="home--images">
-                    <img src="imgs/home-img.png" alt="home image" class="home--img">
+                    <img src="imgs/home-img.webp" width="1219" height="1055" alt="home image" class="home--img">
                 </div>
 
                 <div class="home--triangulo home--triangulo-3"></div>
@@ -94,10 +92,10 @@
         <!-- PARCERIAS -->
         <section class="logos section">
             <div class="logos--container container grid">
-                <img src="imgs/logo1.png" alt="" class="logos--img">
-                <img src="imgs/logo2.png" alt="" class="logos--img">
-                <img src="imgs/logo3.png" alt="" class="logos--img">
-                <img src="imgs/logo4.png" alt="" class="logos--img">
+                <img src="imgs/logo1.webp" width="250" height="70" alt="" class="logos--img">
+                <img src="imgs/logo2.webp" width="250" height="70" alt="" class="logos--img">
+                <img src="imgs/logo3.webp" width="250" height="70" alt="" class="logos--img">
+                <img src="imgs/logo4.webp" width="250" height="70" alt="" class="logos--img">
             </div>
         </section>
 
@@ -105,67 +103,63 @@
         <section class="section programa" id="programa">
             <div class="container">
                 <div class="section--data">
-                    <h2 class="section--subtitulo">Nossos Programas</h2>
+                    <h3 class="section--subtitulo">Produtos</h3>
                     <div class="section--titulos">
-                        <h1 class="section--titulo-borda">CONSTRUA</h1>
-                        <h1 class="section--titulo">SEU MELHOR SHAPE</h1>
+                        <h3 class="section--titulo-borda">A MELHOR</h3>
+                        <h2 class="section--titulo">LOJA DE SUPLEMENTOS</h2>
                     </div>
                 </div>
 
                 <div class="programa--container grid">
                     <article class="programa--card">
                         <div class="programa--shape">
-                            <img class="programa--img" src="imgs/program1.png" alt="">
+                            <img class="programa--img" src="imgs/program1.webp" width="256" height="256" alt="">
                         </div>
-                        <h3 class="programa--titulo">Músculo Flexível</h3>
+                        <h3 class="programa--titulo">Hipercalóricos</h3>
                         <p class="programa--descricao">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus officia recusandae nulla
-                            vitae accusantium aspernatur.
+                            Cansou de ser chamado de <s>frango 🐥</s>? Aqui temos os melhores hipercalóricos pra você ficar sheipado. 
                         </p>
-                        <a href="#" class="programa--botao">
-                            <i class="ri-arrow-right-line"></i>
+                        <a href="#" class="botao--2 botao--flex">
+                            VER PRODUTOS <i class="ri-arrow-right-line"></i>
                         </a>
                     </article>
 
                     <article class="programa--card">
                         <div class="programa--shape">
-                            <img class="programa--img" src="imgs/program2.png" alt="">
+                            <img class="programa--img" src="imgs/program2.webp" width="256" height="256" alt="">
                         </div>
-                        <h3 class="programa--titulo">Exercícios de Cardio</h3>
+                        <h3 class="programa--titulo">Creatina</h3>
                         <p class="programa--descricao">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem inventore mollitia
-                            exercitationem molestiae cum commodi.
+                            Pra você repor aqueles aminoácidos e ganhar aquela ajuda na força e no seu desempenho nos exercícios.
                         </p>
-                        <a href="#" class="programa--botao">
-                            <i class="ri-arrow-right-line"></i>
+                        <a href="#" class="botao--2 botao--flex">
+                            VER PRODUTOS <i class="ri-arrow-right-line"></i>
                         </a>
                     </article>
 
                     <article class="programa--card">
                         <div class="programa--shape">
-                            <img class="programa--img" src="imgs/program3.png" alt="">
+                            <img class="programa--img" src="imgs/program3.webp" width="256" height="256" alt="">
                         </div>
-                        <h3 class="programa--titulo">Yoga</h3>
+                        <h3 class="programa--titulo">Termogénicos</h3>
                         <p class="programa--descricao">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nihil. Tenetur, praesentium!
-                            Illo dicta at optio hic.
+                            Pra você acelerar o metabolismo e queimar aquela gordurinha na hora do exercício.
                         </p>
-                        <a href="#" class="programa--botao">
-                            <i class="ri-arrow-right-line"></i>
+                        <a href="#" class="botao--2 botao--flex">
+                            VER PRODUTOS <i class="ri-arrow-right-line"></i>
                         </a>
                     </article>
 
                     <article class="programa--card">
                         <div class="programa--shape">
-                            <img class="programa--img" src="imgs/program4.png" alt="">
+                            <img class="programa--img" src="imgs/program4.webp" width="256" height="256" alt="">
                         </div>
-                        <h3 class="programa--titulo">Perda de Peso</h3>
+                        <h3 class="programa--titulo">Whey Protein</h3>
                         <p class="programa--descricao">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iure libero architecto
-                            repudiandae maiores dicta quae quo.
+                            Aquela proteína que a gente ama e que traz vários benefícios pra saúde ossea do nosso corpo.
                         </p>
-                        <a href="#" class="programa--botao">
-                            <i class="ri-arrow-right-line"></i>
+                        <a href="#" class="botao--2 botao--flex">
+                            VER PRODUTOS <i class="ri-arrow-right-line"></i>
                         </a>
                     </article>
                 </div>
@@ -178,10 +172,10 @@
                 <div class="escolha--container container grid">
                     <div class="escolha--conteudo">
                         <div class="section--data">
-                            <h2 class="section--subtitulo">Melhor Decisão</h2>
+                            <h3 class="section--subtitulo">Melhor Decisão</h3>
                             <div class="section--titulos">
-                                <h1 class="section--titulo-borda">PORQUE</h1>
-                                <h1 class="section--titulos">A GENTE?</h1>
+                                <h3 class="section--titulo-borda">PORQUE</h3>
+                                <h2 class="section--titulos">SUPLEMENTOS?</h2>
                             </div>
                         </div>
 
@@ -211,7 +205,7 @@
                     </div>
 
                     <div class="escolha--triangulos">
-                        <img class="escolha--img" src="imgs/choose-img.png" alt="">
+                        <img class="escolha--img" src="imgs/choose-img.webp" width="832" height="1099" alt="">
                         <div class="escolha--triangulo escolha--triangulo-1"></div>
                     </div>
                 </div>
@@ -233,7 +227,7 @@
                     <article class="preco--card">
                         <header class="preco--header">
                             <div class="preco--shape">
-                                <img src="imgs/pricing1.png" alt="" class="preco--img">
+                                <img src="imgs/pricing1.webp" width="128" height="128" alt="" class="preco--img">
                             </div>
                             <h1 class="preco--titulo">BASICO</h1>
                             <h2 class="preco--numero">R$99,90</h2>
@@ -268,7 +262,7 @@
                     <article class="preco--card preco--card-ativo">
                         <header class="preco--header">
                             <div class="preco--shape">
-                                <img src="imgs/pricing2.png" alt="" class="preco--img">
+                                <img src="imgs/pricing2.webp" width="128" height="128" alt="" class="preco--img">
                             </div>
                             <h1 class="preco--titulo">INTERMEDIÁRIO</h1>
                             <h2 class="preco--numero">R$159,90</h2>
@@ -303,7 +297,7 @@
                     <article class="preco--card">
                         <header class="preco--header">
                             <div class="preco--shape">
-                                <img src="imgs/pricing3.png" alt="" class="preco--img">
+                                <img src="imgs/pricing3.webp" width="128" height="128" alt="" class="preco--img">
                             </div>
                             <h1 class="preco--titulo">COMPLETO</h1>
                             <h2 class="preco--numero">R$199,90</h2>
@@ -440,9 +434,9 @@
     
 
     <!--SCROLL REVEAL-->    
-    <script src="scrollreveal.min.js"></script>
+    <script src="scrollreveal.min.js" rel="preload"></script>
     <!--EMAIL JS-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
 </body>
 
 </html>
