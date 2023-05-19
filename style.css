@@ -2,7 +2,7 @@
 :root {
 
     /* CORES HSL(hue, saturation, lightness) */
-  --primeira-cor: hsl(79, 72%, 55%);
+  --primeira-cor: #76f319;
   --primeira-cor-light: hsl(79, 97%, 77%);
   --primeira-cor-alt: hsl(79, 67%, 52%);
   --primeira-cor-dark: hsl(79, 63%, 50%);
@@ -186,7 +186,7 @@ button {
 }
 
 .nav--logo img {
-    width: 1.5rem;
+    width: 9.5rem;
 }
 
 .nav--toggle {
@@ -399,7 +399,7 @@ button {
     padding: 1.5rem 2rem;
     border: 2px solid transparent;
     transition: background .5s, border .4s;
-    box-shadow: hsla(79, 72%, 55%) -5px -5px, hsla(79, 72%, 55%, 0.705) -10px -10px, hsla(79, 72%, 55%, 0.534) -15px -15px, hsla(79, 72%, 55%, 0.267) -20px -20px;
+    box-shadow: #76f319 -5px -5px, #64CC14 -10px -10px, #52A811 -15px -15px, #42870E -20px -20px;
     transition: all .5s;
     border: 1px solid var(--primeira-cor);
 }
